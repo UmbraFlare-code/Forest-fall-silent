@@ -3,13 +3,17 @@ import { motion } from "framer-motion";
 const FaceChapter = () => {
     return (
         <>
-            <motion.h1 className="text-center" animate={{ x: -20 }}>Introduction</motion.h1>
+            <motion.h1 className="text-center" animate={{ x: -20 }}>Guardian of Climate</motion.h1>
             <div className="avatar-presentation">    
                 <div className="presentation">
-                    <p className="text-center">En lo profundo del corazón del Amazonas, donde la vida florece con una energía inagotable, habita un ser antiguo conocido como el Guardian of Climate. Este protector ancestral ha vigilado la selva desde tiempos inmemoriales, cuidando del delicado equilibrio que sostiene a millones de especies y a la humanidad misma. Su misión: preservar la salud de la Tierra y educar a las personas sobre los peligros que amenazan este frágil ecosistema.</p>
+                    <p className="text-center">
+                        Thousands of years ago the Amazon was protected by the Guardian. Everything was in balance, human life and the environment benefited each other. But suddenly  everything changed when the Guardian of the Amazon disappeared. Only he could restore the Amazon and safeguard the balance. 
+                        We have reached a critical point. Your help is vital. Today, you will play the role of this Guardian. Your decisions will shape tomorrow. Choose wisely.
+                        Below you will find information that will be useful for your adventure.
+                    </p>
                 </div>
                 <div className="avatar flex-row">    
-                    <img src="/Guardian.png" alt="Guardian"/>
+                    <img src="/images/intro/Guardian.png" alt="Guardian"/>
                 </div>
             </div>
         </>

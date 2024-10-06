@@ -6,7 +6,7 @@ function handleContinue () {
     pnButtons.style.display = "inherit";
 }
 
-const ChapterIntro = ({title, description, question, img}) => { 
+const ChapterIntro = ({title, description, buttonLabel="continue", question, img}) => { 
     const pnButtons = document.querySelector(".pvnt-buttons");
     pnButtons.style.display = "none";
 
@@ -16,7 +16,7 @@ const ChapterIntro = ({title, description, question, img}) => {
                 <h1>{title}</h1>
                 <p>{description}</p>
                 <h3>{question}</h3>
-                <button onClick={handleContinue}>Continue</button>
+                <button onClick={handleContinue}>{buttonLabel}</button>
             </div>
             <div className="chapter-img">
                 <img src={img} />

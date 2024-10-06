@@ -1,8 +1,8 @@
 import { motion } from "framer-motion";
 
-const ConceptDef = ({title, description, img, reverse}) => {
+const ConceptDef = ({title, description, img, reverse=false}) => {
     return (
-        <div className={`desc-container center-all ${reverse && "reverse"}`}>
+        <section className={`desc-container center-all ${reverse && "reverse"}`}>
             <div className="image-description">
                 <img src={img} alt={img.replace(".jpg", "")} />
             </div>
@@ -22,7 +22,7 @@ const ConceptDef = ({title, description, img, reverse}) => {
                 </ol>
 
             </div>
-        </div>
+        </section>
     )
 }
 

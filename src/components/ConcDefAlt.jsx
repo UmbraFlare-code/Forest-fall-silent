@@ -1,7 +1,7 @@
 const ConcDefAlt = ({title, description, img}) => {
     return (
     <section className="condef-alt flex-row">
-            <h1>{title}</h1>
+            <h1 className="text-center">{title}</h1>
             <div className="defialt-container">
                 <div className="first-text">
                     <p>{description[0]}</p>

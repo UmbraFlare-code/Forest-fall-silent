@@ -13,7 +13,7 @@ function onDecision (question, option){
     pnButtons.style.display = "inherit";
 }
 
-const DecisionSlide = ({ question, options, img, description }) => {
+const DecisionSlide = ({ title, question, options, img, description }) => {
     const exist = localStorage.getItem(question);
     const next = document.querySelector("#next"); 
 
@@ -33,8 +33,9 @@ const DecisionSlide = ({ question, options, img, description }) => {
                 <img src={img} alt={question}/>
             </div> 
             <div className="question-side">
-                <h2>{question}</h2>
+                <h2>{title}</h2>
                 <p>{description}</p>
+                <h3 className="text-center">{question}</h3>
                 <div className="options">
                     {options.map((option, index) => (
                         <button key={index} onClick={() => onDecision(question, option)}>

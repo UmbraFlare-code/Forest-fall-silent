@@ -62,6 +62,10 @@ const SelectCharacter = () => {
                 </form>
                 <p>Selecciona el tipo de guardian que quieres ser</p>
                 <div className="select-buttons">
+                    <button className='warrior flex-row' onClick={heroHandler} >
+                        <GiPointySword />
+                        Guerrero
+                    </button>
                     <button className='defender flex-row' onClick={heroHandler}>
                         <GiBoltShield />
                         Defensor
@@ -73,11 +77,7 @@ const SelectCharacter = () => {
                     <button className='healer flex-row' onClick={heroHandler}>
                         <GiPlantsAndAnimals />
                         Sanador
-                    </button>
-                    <button className='warrior flex-row' onClick={heroHandler} >
-                        <GiPointySword />
-                        Guerrero
-                    </button>
+                    </button> 
                 </div>
                 <button className="create-character" onClick={confirmHandler}>Crear personaje</button>
                 {   (name !== null && heroClass !== null) &&

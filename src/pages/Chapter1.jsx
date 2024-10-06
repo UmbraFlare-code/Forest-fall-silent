@@ -19,7 +19,7 @@ const Chapter1 = ({}) => {
                 {   slide === 0 ?
                     <FaceChapter 
                         title={"Chapter 1"}
-                        description={"Nuestro Primer Desafío"}
+                        description={"Carbon dioxide"}
                         img={'/chapter-1-wall.jpg'}
                         alt={"Rio en el amazonas"}
                     /> :
