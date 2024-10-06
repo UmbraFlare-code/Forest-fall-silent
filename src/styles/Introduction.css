@@ -1,5 +1,4 @@
 main {
-    max-width: 1200px;
     min-height: 100vh;
     margin: auto;
     padding: 2rem;
@@ -9,14 +8,20 @@ main {
     align-items: center;
 }
 
+h1 {
+    margin-bottom: 1rem;
+}
+
 h1.slide-title {
     margin: 1rem 0;
-    font-size: clamp(1.44rem, 0.8539rem + 2.9304vw, 3.125rem);
+    font-size: clamp(1.44rem, 0.8539rem + 2.9304vw, 2.5rem);
+    text-align: left;
 }
 
 .avatar-presentation {
     gap: 2rem;
     width: 100%;
+    max-width: 1200px;
 }
 
 .avatar {
@@ -34,13 +39,58 @@ h1.slide-title {
     gap: 2rem;
 }
 
+.desc-container {
+    max-width: 1200px;
+    gap: 2rem;
+    margin-bottom: 2rem;
+    flex-direction: column-reverse;
+}
+
+.image-description {
+    img {
+        width: 100%;
+        max-width: 750px;
+        height: 100%;
+        border-radius: 10px;
+        object-fit: cover;
+    }
+}
+
+.desc-info {
+    padding: 1rem;
+}
+
 li {
     margin: 1rem 0;
-    font-size: clamp(0.8333rem, 0.5667rem + 1.3333vw, 1.28rem);}
+    font-size: clamp(0.8333rem, 0.5667rem + 1.3333vw, 1.15rem);
+    list-style-type: none;
+}
+
+.text-center {
+    text-align: center;
+}
+
+@media screen and (min-width: 1024px) {
+    .desc-container {
+        flex-direction: row;
+
+        .image-description {
+            img {
+                width: 400px;
+                height: 400px;
+            }
+        }
+    }
+}
 
 @media screen and (min-width: 720px) {
-    h1 {
-        text-align: center;
+    .reverse {
+        flex-direction: row-reverse;
+        text-align: right;
+
+        h1 {
+            text-align: right;    
+        }
     }
 
     main {

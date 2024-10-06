@@ -1,22 +1,22 @@
 const slides = [
     {
         title: 'Greenhouse Gases (GHGs)',
+        img: '/chapter-1-wall.jpg',
         lstDesc: [
-            'Gases en la atmósfera que atrapan el calor del sol.',
-            'Aumentan el efecto invernadero, provocando un calentamiento global.',
-            'CO₂ y CH₄ son ejemplos de GEI importantes emitidos por incendios forestales.'
+            'Los gases de efecto invernadero, como el dióxido de carbono (CO2) y el metano (CH4), eran absorbidos por los vastos bosques y liberados de forma natural en ciclos que preservaban la estabilidad climática del planeta. Sin embargo, todo cambión cunado el guardian del bosque, aquel que mantenía el balance entre la naturaleza y los humanos, desapareció.',
+            'Los gases de efecto invernadero, como el dióxido de carbono (CO2) y el metano (CH4), eran absorbidos por los vastos bosques y liberados de forma natural en ciclos que preservaban la estabilidad climática del planeta. Sin embargo, todo cambión cunado el guardian del bosque, aquel que mantenía el balance entre la naturaleza y los humanos, desapareció.',
         ]
     },
     {
         title: 'Carbon Dioxide (CO₂)',
+        img: '/chapter-1-wall.jpg',
         lstDesc: [
-            'Gas que se libera al quemar combustibles fósiles, madera y durante procesos industriales.',
-            'Es el principal contribuyente al cambio climático, aumentando las temperaturas globales.',
-            'Los incendios forestales liberan grandes cantidades de CO₂, afectando los sumideros naturales como los bosques.'
+            'Los gases de efecto invernadero, como el dióxido de carbono (CO2) y el metano (CH4), eran absorbidos por los vastos bosques y liberados de forma natural en ciclos que preservaban la estabilidad climática del planeta. Sin embargo, todo cambión cunado el guardian del bosque, aquel que mantenía el balance entre la naturaleza y los humanos, desapareció.',
         ]
     },
     {
         title: 'Methane (CH₄)',
+        img: '/chapter-1-wall.jpg',
         lstDesc: [
             'GEI altamente potente, atrapando mucho más calor que el CO₂ a corto plazo.',
             'Liberado por actividades como la agricultura y la destrucción de humedales.',
@@ -25,6 +25,7 @@ const slides = [
     },
     {
         title: 'GHG Source',
+        img: '/chapter-1-wall.jpg',
         lstDesc: [
             'Cualquier actividad o proceso que libera GEI a la atmósfera.',
             'La quema de combustibles fósiles, los incendios forestales y la agricultura son grandes fuentes.',
@@ -33,6 +34,7 @@ const slides = [
     },
     {
         title: 'GHG Sink',
+        img: '/chapter-1-wall.jpg',
         lstDesc: [
             'Proceso o sistema que absorbe y almacena GEI, como los bosques o los océanos.',
             'Los sumideros ayudan a reducir la concentración de GEI en la atmósfera.',
@@ -41,6 +43,7 @@ const slides = [
     },
     {
         title: 'Carbon Budget',
+        img: '/chapter-1-wall.jpg',
         lstDesc: [
             'Límite total de CO₂ que podemos emitir sin superar niveles peligrosos de calentamiento global.',
             'El presupuesto de carbono se agota rápidamente con las actividades humanas actuales.',
@@ -50,9 +53,10 @@ const slides = [
 ];
 
 const limit = slides.length;
+
 const urls = {
     prev: '/home',
-    next: '/chapter-1'
+    next: '/select-character'
 };
 
 export { slides, limit, urls };

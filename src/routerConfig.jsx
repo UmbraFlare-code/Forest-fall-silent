@@ -1,5 +1,6 @@
 import Home from './pages/Home';
 import Introduction from './pages/Introduction';
+import SelectCharacter from './components/SelectCharacter';
 import Chapter1 from './pages/Chapter1';
 import Chapter2 from './pages/Chapter2';
 import Chapter3 from './pages/Chapter3';
@@ -18,6 +19,10 @@ export const routes = [
         path: "/introduction",
         element: <Introduction />,
     }, 
+    {
+        path: "/select-character",
+        element: <SelectCharacter />,
+    },
     {
         path: "/chapter-1",
         element: <Chapter1 />,

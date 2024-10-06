@@ -111,6 +111,7 @@ main {
 
         .options {
             flex-direction: row;
+            flex-wrap: wrap;
             justify-content: space-around;
 
             button {

@@ -21,7 +21,12 @@ const Introduction = () => {
                 {slide === 0 ? (
                     <FaceIntro />
                 ) : (
-                        <ConceptDef title={slides[slide - 1].title} listDescription={slides[slide - 1].lstDesc} />
+                        <ConceptDef
+                            title={slides[slide - 1].title}
+                            description={slides[slide - 1].lstDesc}
+                            img={slides[slide-1].img}
+                            reverse={(slide - 1) % 2 !== 0}
+                        />
                     )}
             </motion.div>
             <PrevNextButton slide={slide} setSlide={setSlide} limit={limit} urls={urls} />

@@ -1,6 +1,8 @@
 import SimpleSlide from "../components/SimpleSlide";
 import DecisionSlide from "../components/DesicionSlide";
 
+let optionSelected = {}
+
 const contents = [
      {
         title: "Title 1",
@@ -20,7 +22,7 @@ const contents = [
         avatar: "/Guardian.png",
         options: [
             { label: "Reducir la deforestación" },
-            { label: "Proteger las especies en peligro" }
+            { label: "Recolectar basura" }
         ]
     }
 ]
