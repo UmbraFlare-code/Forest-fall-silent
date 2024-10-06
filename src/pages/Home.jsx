@@ -1,6 +1,4 @@
 import HeroImage from '../components/HeroImage'
-import GlobeMap from '../components/GlobeMap';
-import ToTopButton from '../components/ToTopButton';
 import '../styles/App.css'
 
 const title = "Forest Falls Silent";
@@ -12,8 +10,6 @@ const Home =  () => {
         <>
             <main>
                 <HeroImage title={title} subtitle={subtitle} buttonText={buttonText} />
-                <GlobeMap />
-                <ToTopButton /> 
             </main>
         </>
     )

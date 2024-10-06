@@ -1,7 +1,8 @@
 const Loader = () => {
     return (
-        <section>
-           <h2>Loading...</h2>
+        <section className="loader-container flex-row">
+           <h2>Loading map...</h2>
+            <div className="loader"></div>
         </section>
     )
 }
