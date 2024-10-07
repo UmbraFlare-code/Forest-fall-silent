@@ -125,13 +125,13 @@
         }
     }
 
-    .defender {
+    .tank {
         background-color: #4CAF50;
     }
-    .explorer {
+    .beastmaster {
         background-color: #42A5F5;
     }
-    .healer {
+    .wizard {
         background-color: #26A69A;
     }
     .warrior {

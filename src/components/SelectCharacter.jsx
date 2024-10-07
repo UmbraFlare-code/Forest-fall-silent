@@ -26,11 +26,11 @@ function confirmHandler () {
     const heroClass = document.querySelector(".selected");
 
     if (input.value === "") {
-        alert("No colocaste tu nombre!");
+        alert("You didn't enter your name!");
     } else if (heroClass === null) {
-        alert("No seleccionaste tu clase de heroe!");
+        alert("You didn't select your hero class!");
     } else {
-        const secure = confirm("Seguro que quieres empezar?");
+        const secure = confirm("Are you sure you want to start?");
         if (!secure) return;
 
         localStorage.setItem("name", input.value);
@@ -41,7 +41,7 @@ function confirmHandler () {
 }
 
 function continueHandler () {
-    const contConfirm = confirm(`Ya tienes un personaje creado, quieres continuar?\n\nName: ${name}\nClass: ${heroClass}`);
+    const contConfirm = confirm(`You already have a character created, do you want to continue?\n\nName: ${name}\nClass: ${heroClass}`);
 
     if (!contConfirm) return
     
@@ -52,31 +52,31 @@ const SelectCharacter = () => {
     return (
         <section className='character-section'>
             <div className="character-container" >
-                <h1 className='text-center'>Sumergete como personaje</h1>
+                <h1 className='text-center'>Join the Guardian's Cause</h1>
                 <form>
                     <label className="form" htmlFor="name">
-                        Cual es tu nombre?
+                        Enter your name and choose your path to defend the forest
                         <input className="input" placeholder="Name" type="text" name="name" id="name" required/>
                         <span className="input-border"></span>
                     </label>
                 </form>
-                <p>Selecciona el tipo de guardian que quieres ser</p>
+                <p>Choose your class and step into your destiny as a protector of the climate.</p>
                 <div className="select-buttons">
                     <button className='warrior flex-row' onClick={heroHandler} >
                         <GiPointySword />
-                        Guerrero
+                        Warrior
                     </button>
-                    <button className='defender flex-row' onClick={heroHandler}>
+                    <button className='tank flex-row' onClick={heroHandler}>
                         <GiBoltShield />
-                        Defensor
+                        Tank
                     </button>
-                    <button className='explorer flex-row' onClick={heroHandler}>
+                    <button className='beastmaster flex-row' onClick={heroHandler}>
                         <GiCat />
-                        Explorador
+                        Beastmaster
                     </button>
-                    <button className='healer flex-row' onClick={heroHandler}>
+                    <button className='wizard flex-row' onClick={heroHandler}>
                         <GiPlantsAndAnimals />
-                        Sanador
+                        Wizard
                     </button> 
                 </div>
                 <button className="create-character" onClick={confirmHandler}>Crear personaje</button>

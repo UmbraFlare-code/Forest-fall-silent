@@ -2,27 +2,27 @@ function onDecision (question, option){
     const next = document.querySelector("#next");
     const pnButtons = document.querySelector(".pvnt-buttons");
 
-    const saveOption = confirm(`Seleccionaste: ${option.label}\n\nSeguro de tu respuesta?`);
+    const saveOption = confirm(`You selected: ${option.label}\n\nAre you sure about your choice?`);
 
     if (!saveOption) return;
 
     localStorage.setItem(`${question}`, `${option.label}`);
-    alert("Respuesta guardada, lo recordaremos por tí.");
+    alert("Response saved, we will remember it for you.");
 
     next.click();
     pnButtons.style.display = "inherit";
 }
 
 const DecisionSlide = ({ title, question, options, img, description }) => {
-    const exist = localStorage.getItem(question);
-    const next = document.querySelector("#next"); 
-
-    setTimeout(() => {
-        if (exist) {
-            let exSelected = confirm(`Antes ya seleccionaste la opcion: ${exist}\n\nQuieres mantenerla?`);
-            if (exSelected) next.click();
-        }
-    }, 1000);
+    //const exist = localStorage.getItem(question);
+    //const next = document.querySelector("#next"); 
+    //
+    //setTimeout(() => {
+    //    if (exist) {
+    //        let exSelected = confirm(`You previously selected the option: ${exist}\n\nDo you want to keep it?`);
+    //        if (exSelected) next.click();
+    //    }
+    //}, 1000);
 
     const pnButtons = document.querySelector(".pvnt-buttons");
     pnButtons.style.display = "none";

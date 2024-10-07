@@ -8,11 +8,11 @@ const contents = [
         title: "Welcome to the Amazon!",
         description: "As you can see today the forests are being deforested and some are on fire. We are about to enter the kingdom of CO2, the Amazon needs you.",
         question: 'Are you ready to be part of the change?',
-        img: '/Guardian.png',
+        img: '/images/intro/Guardian.png',
         buttonLabel: "Start",
     },  
     {
-        title: "otra-cosa"
+        title: "Fires"
     },
 ]
 

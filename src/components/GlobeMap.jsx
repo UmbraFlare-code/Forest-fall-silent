@@ -27,17 +27,17 @@ const GlobeMap = ({}) => {
             <Loader />
             <h1 className='text-center'>Forest fire map</h1>
             <div className="canvas-container flex-row">
-                <img src="/Guardian.png" alt="Guardian del amazonas"/>
-                <p className='left top border-red'>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Impedit error ratione suscipit perspiciatis. Tempora quis fugiat repellendus nulla aspernatur, nemo sint rerum praesentium ducimus ipsa inventore iusto cum ut nisi.</p>
-                <p className='right bottom border-green'>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Impedit error ratione suscipit perspiciatis. Tempora quis fugiat repellendus nulla aspernatur, nemo sint rerum praesentium ducimus ipsa inventore iusto cum ut nisi.</p>
-                <p className='right top border-yellow'>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Impedit error ratione suscipit perspiciatis. Tempora quis fugiat repellendus nulla aspernatur, nemo sint rerum praesentium ducimus ipsa inventore iusto cum ut nisi.</p>
+                <img src="/images/intro/puma.png" alt="Guardian del amazonas"/>
+                <p className='left top border-red'>It was losing its ability to absorb carbon dioxide. A single forest fire in Peru can release up to 10 million tons of CO₂ into the atmosphere</p>
+                <p className='right bottom border-green'>National Service of Natural Areas Protected by the State (Sernanp), has controlled and liquidated more than 70 forest fires in the area of protected natural areas (ANP)</p>
+                <p className='right top border-yellow'>It generates toxic particles that seriously affect people's respiratory health, even hundreds of kilometers from the fire.</p>
                 <Globe
                     className="my-globe"
                     ref={globeEl}
-                    width={window.innerWidth * 0.9}
+                    width={(window.innerWidth < 1300) ? window.innerWidth * 0.9 : 1300}
                     height={window.innerHeight * 0.9}
-                    globeImageUrl={'/blue.jpg'}
-                    backgroundImageUrl={'/cosmos.jpg'}
+                    globeImageUrl={'/images/blue.jpg'}
+                    backgroundImageUrl={'/images/cosmos.jpg'}
                     polygonsData={countries.features}
                     polygonCapColor={() => '#0e9c34'}
                     heatmapsData={[gData]}

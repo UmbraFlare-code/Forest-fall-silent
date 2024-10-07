@@ -5,54 +5,52 @@ import DesicionSlide from "../components/DesicionSlide";
 
 const contents = [
      {
-        title: "Title 1",
-        description: "Lorem ipsum dolor sit amet consectetur adipiscing elit nunc interdum magna taciti nibh habitasse senectus nulla, netus vel viverra iaculis enim etiam fermentum nullam est metus tortor lacinia pharetra primis. Ad cubilia hendrerit donec vehicula eros senectus sodales varius, diam accumsan nec sagittis vestibulum aptent ut, tincidunt himenaeos velit per maecenas habitasse fusce. Cubilia ante dictum nec vitae pretium sed metus blandit, egestas nisl tempor justo eleifend libero aliquet.",
-        question: 'Estas listo para ser parte del cambio?',
+        title: "Active Human Plans",
+        description: "On this occasion, how should we deal with methane? By regulating agricultural activity or restricting fossil fuel extraction? ",
+        question: 'Ready to be a part of the change?',
         btnLabel: "Start",
-        img: '/chapter-1-wall.jpg',
+        img: '/images/intro/Guardian.png',
     },
     {
-        title: "Title 2",
-        description: "Lorem ipsum dolor sit amet consectetur adipiscing elit nunc interdum magna taciti nibh habitasse senectus nulla, netus vel viverra iaculis enim etiam fermentum nullam est metus tortor lacinia pharetra primis. Ad cubilia hendrerit donec vehicula eros senectus sodales varius, diam accumsan nec sagittis vestibulum aptent ut, tincidunt himenaeos velit per maecenas habitasse fusce. Cubilia ante dictum nec vitae pretium sed metus blandit, egestas nisl tempor justo eleifend libero aliquet.",
-        question: 'Estas listo para ser parte del cambio?',
+        title: "The plains are dangerous",
+        description: "Let's start by looking at some important facts about the plains. For this section, you'd better use this, so the methane won't attack your system.",
+        question: 'Do you want to see them?',
         btnLabel: "Agricultural activity",
-        img: '/chapter-1-wall.jpg',
+        img: '/images/intro/Guardian.png',
     },
     {
         title: "Atmospheric Methane Concentrations since 1984",
         description: [
-            "La concentración de metano en la atmósfera se ha más que duplicado en los últimos 200 años. Los científicos estiman que este aumento es responsable del 20 al 30% del calentamiento climático desde la Revolución Industrial (que comenzó en 1750).",
-            "Las fuentes más grandes de metano son la agricultura, los combustibles fósiles y la descomposición de residuos en vertederos.",
-            "Los procesos naturales representan el 40% de las emisiones de metano, siendo los humedales la fuente natural más grande."
+            "The concentration of methane in the atmosphere has more than doubled in the last 200 years. Scientists estimate that this increase is responsible for 20-30% of global warming since the Industrial Revolution (which began in 1750).",
+            "The largest sources of methane are agriculture, fossil fuels and waste decomposition in landfills.",
+            "Natural processes account for 40% of methane emissions, with wetlands being the largest natural source."
         ],
         img: '/chapter-1-wall.jpg',
     },
     {
-        title: "Quimicos por plantación",
+        title: "Chemicals per planting",
         description: [
-            "La concentración de metano en la atmósfera se ha más que duplicado en los últimos 200 años. Los científicos estiman que este aumento es responsable del 20 al 30% del calentamiento climático desde la Revolución Industrial (que comenzó en 1750).",
-            "Las fuentes más grandes de metano son la agricultura, los combustibles fósiles y la descomposición de residuos en vertederos.",
-            "Los procesos naturales representan el 40% de las emisiones de metano, siendo los humedales la fuente natural más grande."
+            "UNODC (2010) published a brief Analytical Report detailing the use of agrochemicals in coca production to increase productivity. It identifies the main inputs used and mentions an estimate of 700,000 liters of agrochemicals used for coca cultivation.",
         ],
         img: '/chapter-1-wall.jpg',
     },
     {
-        title: "Quimicos por plantación 2",
+        title: "Chemicals per planting",
         description: [
-            "La concentración de metano en la atmósfera se ha más que duplicado en los últimos 200 años. Los científicos estiman que este aumento es responsable del 20 al 30% del calentamiento climático desde la Revolución Industrial (que comenzó en 1750).",
-            "Las fuentes más grandes de metano son la agricultura, los combustibles fósiles y la descomposición de residuos en vertederos.",
-            "Los procesos naturales representan el 40% de las emisiones de metano, siendo los humedales la fuente natural más grande."
+            "The concentration of methane in the atmosphere has more than doubled in the last 200 years. Scientists estimate that this increase is responsible for 20-30% of global warming since the Industrial Revolution (which began in 1750).",
+            "The largest sources of methane are agriculture, fossil fuels and waste decomposition in landfills.",
+            "Natural processes account for 40% of methane emissions, with wetlands being the largest natural source."
         ],
         img: '/chapter-1-wall.jpg',
     },
     {
-        title: "Actividad agrícola",
-        question: "¿Tirarás el estiercol a la fosa?",
-        description: "Mientras veiamos los campos de cultivo  el Metano se nos atraveso, nos dijo que lo ayudaramos a limpiar el espacio del ganado. Al parecer hay mucho estiércol, el Metano quiere que botes el estiércol a una fosa.",
-        avatar: "/Guardian.png",
+        title: "Agricultural activity",
+        question: "Will you throw the manure into the pit?",
+        description: "While we were looking at the fields, Methane came across and told us to help him clean up the livestock area. Apparently there is a lot of manure, Methane wants you to throw the manure into a pit.",
+        avatar: "/images/intro/CH4-metano.jpeg",
         options: [
-            { label: "Sí, habremos ayudar al ganado" },
-            { label: "No, mejor busquemos otro lugar" }
+            { label: "Yes, we will have helped the cattle" },
+            { label: "No, let's find another place" }
         ]
     }
 

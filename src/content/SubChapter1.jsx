@@ -6,7 +6,7 @@ const contents = [
         title: "The Amazon on alert",
         question: "¿Do yout want to see them1?",
         description: "Let's start by looking at some important facts about the Amazon.",
-        avatar: "/Guardian.png",
+        avatar: "/images/intro/puma.png",
         options: [
             { label: "The Amazon is known as the “Lungs of the planet." },
             { label: "Tree plantations do not compensate for biodiversity loss." },
@@ -14,35 +14,37 @@ const contents = [
         ]
     },
     {
-        title: "¿Cómo quieres proteger el Amazonas 1?",
-        description: ["Los problemas con el dioxido de carbono se relacionan con la tala de arboles e incendios forestales."],
-        img: "/Guardian.png",
+        title: "Forest fires",
+        description: [
+            "It generates toxic particles that seriously affect people's respiratory health, even hundreds of kilometers from the fire.",
+            "It is estimated that 9 out of 10 people in Amazonian cities suffer from respiratory diseases during fire season.",
+        ],
+        img: "/images/chapter1/deforest-alt.png",
     },
     {
-        title: "¿Cómo quieres proteger el Amazonas 2?",
-        description: ["Los problemas con el dioxido de carbono se relacionan con la tala de arboles e incendios forestales."],
-        img: "/Guardian.png",
+        title: "Deforestation due to Coca crops",
+        description: ["The base document Monitoring Project the Deforestation of the Peruvian Amazon by INRENA which calculated at 9,559,817 ha deforested throughout the Peruvian Amazon in 2000. Based on a “qualitative assessment” it estimated 2,331,000 ha deforested for coca."],
+        img: "/images/chapter1/coca.jpg",
     },
     {
-        title: "¿Cómo quieres proteger el Amazonas 3?",
-        description: ["Los problemas con el dioxido de carbono se relacionan con la tala de arboles e incendios forestales."],
-        img: "/Guardian.png",
+        title: "Cascade effects",
+        description: [
+            "These interactions explain the complexity of the emerging risks of climate change, the degradation of ecosystems and the loss of biodiversity. But, at the same time, they offer opportunities to face the future in terms of resilience, adaptability and mitigation of problems derived from climate change. climate change in society and ecosystems."
+        ],
+        img: "/images/chapter1/cascada.jpg",
     },
     {
-        title: "¿Cómo quieres proteger el Amazonas 2?",
-        description: ["Los problemas con el dioxido de carbono se relacionan con la tala de arboles e incendios forestales."],
+        title: "Landsat 8 detects new deforestation in Peru",
+        description: [
+            "Tropical forests are threatened by many types of agriculture, livestock and human activity. One of the best ways to track those threats is through the Landsat series of satellites, developed by NASA and operated by the United States Geological Survey."
+        ],
         img: "/Guardian.png",
-    },
+    }, 
     {
-        title: "¿Cómo quieres proteger el Amazonas 3?",
-        description: ["Los problemas con el dioxido de carbono se relacionan con la tala de arboles e incendios forestales."],
-        img: "/Guardian.png",
-    },
-    {
-        title: "Deforstacion",
-        question: "¿Cómo quieres proteger el Amazonas?",
-        description: "Los problemas con el dioxido de carbono se relacionan con la tala de arboles e incendios forestales.",
-        avatar: "/Guardian.png",
+        title: "Deforestation",
+        question: "What do you think, should we help him or not?",
+        description: "Oh no, we are at CO₂. It seems he wants your help to plant exotic trees, maybe he wants to contributing to reforestation.",
+        avatar: "/images/intro/CO2.jpg",
         options: [
             { label: "Yes, his intention is good" },
             { label: "No, he could be fooling us" }
@@ -83,22 +85,14 @@ const slides = [
         title={contents[4].title}
         description={contents[4].description}
         img={contents[4].img}
-        reverse={true}
-    />,
-    <ConceptDef 
-        key={crypto.randomUUID()}
-        title={contents[5].title}
-        description={contents[5].description}
-        img={contents[5].img}
-        reverse={true}
     />, 
     <DesicionSlide  
         key={crypto.randomUUID()}
-        title={contents[6].title}
-        question={contents[6].question}
-        options={contents[6].options}
-        description={contents[6].description} 
-        img={contents[6].avatar}
+        title={contents[5].title}
+        question={contents[5].question}
+        options={contents[5].options}
+        description={contents[5].description} 
+        img={contents[5].avatar}
     />
 ];
 

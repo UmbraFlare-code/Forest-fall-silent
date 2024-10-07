@@ -20,8 +20,8 @@ const Chapter1 = ({}) => {
                     <FaceChapter 
                         title={"Chapter 1"}
                         description={"Carbon dioxide"}
-                        img={'/chapter-1-wall.jpg'}
-                        alt={"Rio en el amazonas"}
+                        img={'/images/chapter1/deforest.jpg'}
+                        alt={"deforest"}
                     /> :
                     slides.filter((_, i) => i === slide - 1 ) }
             </motion.div>

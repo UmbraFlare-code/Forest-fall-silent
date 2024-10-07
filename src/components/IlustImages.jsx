@@ -8,7 +8,7 @@ function imgChange (e) {
 }
 
 const IlustImages = ({title, imgs}) => {
-    alert("Da doble click en cada imágen para cambiar.")
+    alert("Double-click on each image to change")
 
     return (
         <section className="ilust-images flex-row">

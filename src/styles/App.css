@@ -281,22 +281,6 @@ h2 {
     justify-content: center;
 }
 
-.left {
-    left: calc(1rem + 3vw);
-}
-
-.right {
-    right: calc(1rem + 3vw);
-}
-
-.top {
-    top: calc(1rem);
-}
-
-.bottom {
-    bottom: calc(1rem + 3vh);
-}
-
 .border-red {
     border-left-color: var(--red);
     border-right-color: var(--red);
@@ -324,7 +308,23 @@ h2 {
  
         p {
             position: absolute;
-            max-width: 450px;
+            max-width: 450px; 
+        }
+
+        .left {
+            left: calc(1rem + 3vw);
+        }
+
+        .right {
+            right: calc(1rem + 3vw);
+        }
+
+        .top {
+            top: calc(1rem);
+        }
+
+        .bottom {
+            bottom: calc(1rem + 3vh);
         }
 
         img {

@@ -8,53 +8,65 @@ import DesicionSlide from "../components/DesicionSlide";
 const contents = [
     {
         title: "The Amazon on alert",
-        question: "¿Cómo quieres proteger el Amazonas?",
-        description: "Los problemas con el dioxido de carbono se relacionan con la tala de arboles e incendios forestales.",
-        avatar: "/Guardian.png",
+        question: "Do you want to see them?",
+        description: "Let's start by looking at some important facts about the Amazon. I will reduce your size, so you can see the world inside this bubble.",
+        avatar: "/images/intro/puma.png",
         options: [
-            { label: "Reducir la deforestación" },
-            { label: "Recolectar basura" }
+            { label: "Deforestation" },
+            { label: "Forest fires" }
         ]
     },
     {
         imgs: [
-            '/chapter-1-wall.jpg', 
-            '/cosmos.jpg', 
-            '/character-wall.jpeg', 
+            '/images/chapter1/fire1.jpg', 
+            '/images/chapter1/fire2.jpeg', 
+            '/images/chapter1/fire3.jpg', 
         ]
     }, 
     {
-        title: "Factores"
+        title: "Factors"
     },
     {
-        title: "¿Cómo quieres proteger el Amazonas 1?",
-        description: ["Los problemas con el dioxido de carbono se relacionan con la tala de arboles e incendios forestales."],
+        title: "Fire triangle",
+        description: ["This fire is the rapid reaction resulting from the union of oxygen in the air, plant cover as fuel and a source of heat. These elements are called the fire triangle; which manifests itself in the form of flames and smoke."],
         img: "/Guardian.png",
     },
     {
-        title: "¿Cómo quieres proteger el Amazonas 2?",
-        description: ["Los problemas con el dioxido de carbono se relacionan con la tala de arboles e incendios forestales."],
+        title: "Fire spread factors",
+        description: ["This fire is the rapid reaction resulting from the union of oxygen in the air, plant cover as fuel and a source of heat. These elements are called the fire triangle; which manifests itself in the form of flames and smoke."],
         img: "/Guardian.png",
     },
     {
-        title: "¿Cómo quieres proteger el Amazonas 3?",
-        description: ["Los problemas con el dioxido de carbono se relacionan con la tala de arboles e incendios forestales."],
-        img: "/Guardian.png",
-    },
-    {
-        title: "¿Cómo quieres proteger el Amazonas 4?",
+        title: "Forest fires",
         description: [
-            "Los problemas con el dioxido de carbono se relacionan con la tala de arboles e incendios forestales.",
-            "Los problemas con el dioxido de carbono se relacionan con la tala de arboles e incendios forestales.",
-            "Los problemas con el dioxido de carbono se relacionan con la tala de arboles e incendios forestales."
+            "These historical data are Peruvian related to forest fires.",
+            "Alteration of water resources, favoring flooding which will induce water contamination.",
+            "The PH rises because the ashes caused by the fire contain a large amount of potassium carbonate CO3K2. However, when the effects of washing and carrying away cations by rain are very intense",
         ],
-        img: "/chapter-1-wall.jpg",
+        img: "/Guardian.png",
+    },
+    {
+        title: "Fires in Amazonas - Brazil",
+        description: [
+            "It generates toxic particles that affect people's respiratory health, even hundreds of kilometers from the fire.",
+            "As a total area of the areas that were burned in the Amazon hexyareas are between 8,816,270 hectares and it is estimated that there was an increase of 96% compared to each year"
+        ],
+        img: "/Guardian.png",
+    },
+    {
+        title: "",
+        description: [
+            "When these fires are repeated, the soil structure is degraded, erodibility increases and fertility decreases, bringing the soils to a level of significant nutritional poverty.",
+            "The Peruvian jungle has been devastated by fire and the level of air pollution increased by more than **% due to smoke blown by the winds from the Amazon areas.",
+            "In the Amazon, there are 850 million hectares of forest with 11.3% located in Peru. In 2024, forest fires reached alarming levels."
+        ],
+        img: "/images/chapter1/tree.jpg",
     },     
     {
         title: "The Amazon on alert",
         question: "¿Cómo quieres proteger el Amazonas?",
         description: "Los problemas con el dioxido de carbono se relacionan con la tala de arboles e incendios forestales.",
-        avatar: "/Guardian.png",
+        avatar: "/images/intro/puma.png",
         options: [
             { label: "Reducir la deforestación" },
             { label: "Recolectar basura" }
@@ -87,22 +99,22 @@ const slides = [
     />, 
     <ConceptDef 
         key={crypto.randomUUID()}
-        title={contents[3].title}
-        description={contents[3].description}
-        img={contents[3].img}
-        reverse={true}
-    />, 
-    <ConceptDef 
-        key={crypto.randomUUID()}
         title={contents[4].title}
         description={contents[4].description}
         img={contents[4].img}
+        reverse={true}
     />, 
     <ConceptDef 
         key={crypto.randomUUID()}
         title={contents[5].title}
         description={contents[5].description}
         img={contents[5].img}
+    />, 
+    <ConceptDef 
+        key={crypto.randomUUID()}
+        title={contents[6].title}
+        description={contents[6].description}
+        img={contents[6].img}
         reverse={true}
     />,  
     <GlobeMap
@@ -110,17 +122,17 @@ const slides = [
     />,
     <ConcDefAlt 
         key={crypto.randomUUID()}
-        title={contents[6].title}
-        img={contents[6].img}
-        description={contents[6].description}
+        title={contents[7].title}
+        img={contents[7].img}
+        description={contents[7].description}
     />,
     <DesicionSlide  
         key={crypto.randomUUID()}
-        title={contents[7].title}
-        question={contents[7].question}
-        options={contents[7].options}
-        description={contents[7].description} 
-        img={contents[7].avatar}
+        title={contents[8].title}
+        question={contents[8].question}
+        options={contents[8].options}
+        description={contents[8].description} 
+        img={contents[8].avatar}
     />
 ];
 
