@@ -11,10 +11,10 @@ This project is part of the NASA SpaceApps Hackathon, designed to tell a story a
 - Slides-based structure with animations.
   
 ## Chapters
-1. **Chapter 1** - The Amazon: A place where life thrives in every corner.
-2. **Chapter 2** - Deforestation in the Amazon, focusing on the burning forests.
-3. **Chapter 3** - The Amazon's diminishing ability to absorb CO2.
-4. **Final Chapter** - How conscious actions can heal the forest.
+1. **Chapter 1** - Carbon Dioxide
+2. **Chapter 2** - Methane
+3. **Chapter 3** - Sumary
+4. **Final Chapter** - Congratulations
 
 ## Tech Stack
 - **React**: For building the user interface.
