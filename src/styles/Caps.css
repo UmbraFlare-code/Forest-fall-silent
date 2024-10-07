@@ -54,7 +54,7 @@ main {
         width: 100%;
         max-width: 400px;
         margin: 1rem auto;
-        object-fit: cover;
+        object-fit: contain;
         border-radius: 16px;
     }
 
@@ -71,7 +71,7 @@ main {
     gap: 1rem;
     justify-content: center;
     align-items: center;
-    padding: 2rem 1rem;
+    padding: 2rem 2rem;
 
     .chapter-info {
         display: flex;
@@ -88,7 +88,7 @@ main {
 
     img {
         width: 100%;
-        max-width: 450px;
+        max-width: 400px;
         border-radius: 16px;
     }
 

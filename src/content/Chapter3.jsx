@@ -2,60 +2,58 @@ import ChapterIntro from "../components/ChapterIntro";
 import ConceptDef from "../components/ConceptDef";
 import SimpleSlide from "../components/SimpleSlide";
 import DesicionSlide from "../components/DesicionSlide";
+import { consecuences } from "./Consecuences";
+
+const questions = [
+    "Which trees will you plant?",
+    "What will be your strategy to handle the manure?",
+    "Will you use your device to extinguish the fire and capture the methane?",
+    "Will you listen to Metano and throw the manure into the well?"
+]
+
+const correct = [
+    "Native trees.",
+    "I will look for another place to dispose of it.",
+    "Yes, it's necessary to act.",
+    "No, I will look for another place."
+]
+
+const desicions = [];
+const results = []
+
+questions.forEach((element, i) => {
+    let selected = localStorage.getItem(element);
+    desicions.push(`${element}: ${selected}`); 
+
+    if (selected === correct[i]) {
+        results.push(consecuences[i].positive) 
+    } else {
+        results.push(consecuences[i].negative) 
+    }
+});
+
 
 const contents = [
      {
         title: "Change of course",
-        description: "Lorem ipsum dolor sit amet consectetur adipiscing elit nunc interdum magna taciti nibh habitasse senectus nulla, netus vel viverra iaculis enim etiam fermentum nullam est metus tortor lacinia pharetra primis. Ad cubilia hendrerit donec vehicula eros senectus sodales varius, diam accumsan nec sagittis vestibulum aptent ut, tincidunt himenaeos velit per maecenas habitasse fusce. Cubilia ante dictum nec vitae pretium sed metus blandit, egestas nisl tempor justo eleifend libero aliquet.",
-        question: 'Estas listo para ser parte del cambio?',
+        description: "What you choose now affects not only this forest, but the entire world.",
+        question: 'Are you ready for the end of the change?',
         btnLabel: "Start",
-        img: '/chapter-1-wall.jpg',
+        img: '/images/intro/Guardian.png',
     },
     {
         title: "Change of course",
-        description: "Lorem ipsum dolor sit amet consectetur adipiscing elit nunc interdum magna taciti nibh habitasse senectus nulla, netus vel viverra iaculis enim etiam fermentum nullam est metus tortor lacinia pharetra primis. Ad cubilia hendrerit donec vehicula eros senectus sodales varius, diam accumsan nec sagittis vestibulum aptent ut, tincidunt himenaeos velit per maecenas habitasse fusce. Cubilia ante dictum nec vitae pretium sed metus blandit, egestas nisl tempor justo eleifend libero aliquet.",
-        question: 'Estas listo para ser parte del cambio?',
+        description: "Let’s start by looking at some important data about your decisions or a new test to combat the greenhouse effect’s agents. I won’t diminish your impact,your new answers will have consequences for everyone",
+        question: 'Do you want to see them?',
         btnLabel: "Decisions",
-        img: '/chapter-1-wall.jpg',
+        img: '/images/intro/puma.png',
     },
     {
-        title: "Atmospheric Methane Concentrations since 1984",
-        description: [
-            "La concentración de metano en la atmósfera se ha más que duplicado en los últimos 200 años. Los científicos estiman que este aumento es responsable del 20 al 30% del calentamiento climático desde la Revolución Industrial (que comenzó en 1750).",
-            "Las fuentes más grandes de metano son la agricultura, los combustibles fósiles y la descomposición de residuos en vertederos.",
-            "Los procesos naturales representan el 40% de las emisiones de metano, siendo los humedales la fuente natural más grande."
-        ],
-        img: '/chapter-1-wall.jpg',
-    },
-    {
-        title: "Quimicos por plantación",
-        description: [
-            "La concentración de metano en la atmósfera se ha más que duplicado en los últimos 200 años. Los científicos estiman que este aumento es responsable del 20 al 30% del calentamiento climático desde la Revolución Industrial (que comenzó en 1750).",
-            "Las fuentes más grandes de metano son la agricultura, los combustibles fósiles y la descomposición de residuos en vertederos.",
-            "Los procesos naturales representan el 40% de las emisiones de metano, siendo los humedales la fuente natural más grande."
-        ],
-        img: '/chapter-1-wall.jpg',
-    },
-    {
-        title: "Quimicos por plantación 2",
-        description: [
-            "La concentración de metano en la atmósfera se ha más que duplicado en los últimos 200 años. Los científicos estiman que este aumento es responsable del 20 al 30% del calentamiento climático desde la Revolución Industrial (que comenzó en 1750).",
-            "Las fuentes más grandes de metano son la agricultura, los combustibles fósiles y la descomposición de residuos en vertederos.",
-            "Los procesos naturales representan el 40% de las emisiones de metano, siendo los humedales la fuente natural más grande."
-        ],
-        img: '/chapter-1-wall.jpg',
-    },
-    {
-        title: "Actividad agrícola",
-        question: "¿Tirarás el estiercol a la fosa?",
-        description: "Mientras veiamos los campos de cultivo  el Metano se nos atraveso, nos dijo que lo ayudaramos a limpiar el espacio del ganado. Al parecer hay mucho estiércol, el Metano quiere que botes el estiércol a una fosa.",
-        avatar: "/Guardian.png",
-        options: [
-            { label: "Sí, habremos ayudar al ganado" },
-            { label: "No, mejor busquemos otro lugar" }
-        ]
-    }
-
+        title: "Decisions",
+        description: desicions.map(el => el),
+        img: '/images/intro/puma.png',
+    }, 
+    ...results
 ]
 
 const slides = [
@@ -95,14 +93,19 @@ const slides = [
         img={contents[4].img}
         reverse={true}
     />,
-    <DesicionSlide  
+    <ConceptDef 
         key={crypto.randomUUID()}
         title={contents[5].title}
-        question={contents[5].question}
-        options={contents[5].options}
         description={contents[5].description} 
-        img={contents[5].avatar}
-    />
+        img={contents[5].img}
+    />,
+    <ConceptDef 
+        key={crypto.randomUUID()}
+        title={contents[6].title}
+        description={contents[6].description} 
+        img={contents[6].img}
+        reverse={true}
+    />,
 ];
 
 const limit = slides.length;

@@ -21,7 +21,7 @@ const Chapter2 = ({}) => {
                         title={"Chapter 2"}
                         description={"Methano"}
                         img={'/images/chapter2/fire.jpg'}
-                        alt={"Rio en el amazonas"}
+                        alt={"fire"}
                     /> :
                     slides.filter((_, i) => i === slide - 1 ) }
             </motion.div>

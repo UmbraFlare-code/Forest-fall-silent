@@ -2,6 +2,10 @@ import ChapterIntro from "../components/ChapterIntro";
 import ConceptDef from "../components/ConceptDef";
 import SimpleSlide from "../components/SimpleSlide";
 import DesicionSlide from "../components/DesicionSlide";
+import { descriptions } from "./Decisions"; 
+
+const hero = localStorage.getItem("heroClass") || "warrior";
+const warriorDesc = descriptions(hero);
 
 const contents = [
      {
@@ -25,32 +29,31 @@ const contents = [
             "The largest sources of methane are agriculture, fossil fuels and waste decomposition in landfills.",
             "Natural processes account for 40% of methane emissions, with wetlands being the largest natural source."
         ],
-        img: '/chapter-1-wall.jpg',
+        img: '/images/chapter2/methan.png',
     },
     {
         title: "Chemicals per planting",
         description: [
             "UNODC (2010) published a brief Analytical Report detailing the use of agrochemicals in coca production to increase productivity. It identifies the main inputs used and mentions an estimate of 700,000 liters of agrochemicals used for coca cultivation.",
         ],
-        img: '/chapter-1-wall.jpg',
+        img: '/images/chapter2/chemicals.png',
     },
     {
         title: "Chemicals per planting",
         description: [
-            "The concentration of methane in the atmosphere has more than doubled in the last 200 years. Scientists estimate that this increase is responsible for 20-30% of global warming since the Industrial Revolution (which began in 1750).",
-            "The largest sources of methane are agriculture, fossil fuels and waste decomposition in landfills.",
-            "Natural processes account for 40% of methane emissions, with wetlands being the largest natural source."
+            "One of the main sources of methane emissions comes from agriculture, particularly livestock, through enteric fermentation and manure management. To combat these emissions, it is essential to improve farm management practices, such as using feed additives that reduce methane production in animals and properly treating manure to minimize emissions.",
+            "These combined measures can significantly reduce methane concentration in the atmosphere and help mitigate global warming."
         ],
-        img: '/chapter-1-wall.jpg',
+        img: '/images/chapter2/chemicals2.jpg',
     },
     {
-        title: "Agricultural activity",
-        question: "Will you throw the manure into the pit?",
-        description: "While we were looking at the fields, Methane came across and told us to help him clean up the livestock area. Apparently there is a lot of manure, Methane wants you to throw the manure into a pit.",
+        title: "The Field Cleanup: Facing Methane",
+        question: "Will you listen to Metano and throw the manure into the well?",
+        description: warriorDesc[3], // Corresponding warrior description
         avatar: "/images/intro/CH4-metano.jpeg",
         options: [
-            { label: "Yes, we will have helped the cattle" },
-            { label: "No, let's find another place" }
+            { label: "Yes, I will throw the manure into the well." },
+            { label: "No, I will look for another place." }
         ]
     }
 

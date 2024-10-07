@@ -4,16 +4,20 @@ import IlustImages from "../components/IlustImages";
 import GlobeMap from "../components/GlobeMap";
 import ConcDefAlt from "../components/ConcDefAlt";
 import DesicionSlide from "../components/DesicionSlide";
+import { descriptions } from "./Decisions"; 
+
+const hero = localStorage.getItem("heroClass") || "warrior";
+const warriorDesc = descriptions(hero);
 
 const contents = [
     {
-        title: "The Amazon on alert",
-        question: "Do you want to see them?",
-        description: "Let's start by looking at some important facts about the Amazon. I will reduce your size, so you can see the world inside this bubble.",
+        title: "The Field Cleanup: Facing Methane",
+        question: "What will be your strategy to handle the manure?",
+        description: warriorDesc[1], // Corresponding warrior description
         avatar: "/images/intro/puma.png",
         options: [
-            { label: "Deforestation" },
-            { label: "Forest fires" }
+            { label: "I will clean the manure and throw it in the well." },
+            { label: "I will look for another place to dispose of it." }
         ]
     },
     {
@@ -29,12 +33,12 @@ const contents = [
     {
         title: "Fire triangle",
         description: ["This fire is the rapid reaction resulting from the union of oxygen in the air, plant cover as fuel and a source of heat. These elements are called the fire triangle; which manifests itself in the form of flames and smoke."],
-        img: "/Guardian.png",
+        img: "/images/chapter1/triangle.png",
     },
     {
         title: "Fire spread factors",
         description: ["This fire is the rapid reaction resulting from the union of oxygen in the air, plant cover as fuel and a source of heat. These elements are called the fire triangle; which manifests itself in the form of flames and smoke."],
-        img: "/Guardian.png",
+        img: "/images/chapter1/factors.png",
     },
     {
         title: "Forest fires",
@@ -43,7 +47,7 @@ const contents = [
             "Alteration of water resources, favoring flooding which will induce water contamination.",
             "The PH rises because the ashes caused by the fire contain a large amount of potassium carbonate CO3K2. However, when the effects of washing and carrying away cations by rain are very intense",
         ],
-        img: "/Guardian.png",
+        img: "/images/chapter1/fires.png",
     },
     {
         title: "Fires in Amazonas - Brazil",
@@ -51,27 +55,27 @@ const contents = [
             "It generates toxic particles that affect people's respiratory health, even hundreds of kilometers from the fire.",
             "As a total area of the areas that were burned in the Amazon hexyareas are between 8,816,270 hectares and it is estimated that there was an increase of 96% compared to each year"
         ],
-        img: "/Guardian.png",
+        img: "/images/chapter1/brazil.png",
     },
     {
         title: "",
         description: [
             "When these fires are repeated, the soil structure is degraded, erodibility increases and fertility decreases, bringing the soils to a level of significant nutritional poverty.",
-            "The Peruvian jungle has been devastated by fire and the level of air pollution increased by more than **% due to smoke blown by the winds from the Amazon areas.",
+            "The Peruvian Amazon has been devastated by fires, and air pollution levels have increased by more than 90% due to smoke carried by winds from the Amazon regions, according to data from SENAMHI (National Meteorological and Hydrological Service of Peru).",
             "In the Amazon, there are 850 million hectares of forest with 11.3% located in Peru. In 2024, forest fires reached alarming levels."
         ],
         img: "/images/chapter1/tree.jpg",
     },     
-    {
-        title: "The Amazon on alert",
-        question: "¿Cómo quieres proteger el Amazonas?",
-        description: "Los problemas con el dioxido de carbono se relacionan con la tala de arboles e incendios forestales.",
+   {
+        title: "The Call of the Guardian of Climate: Facing Methane",
+        question: "Will you use your device to extinguish the fire and capture the methane?",
+        description: warriorDesc[2], // Corresponding warrior description
         avatar: "/images/intro/puma.png",
         options: [
-            { label: "Reducir la deforestación" },
-            { label: "Recolectar basura" }
+            { label: "Yes, it's necessary to act." },
+            { label: "No, I will wait for it to resolve itself." }
         ]
-    }
+    } 
 ]
 
 const slides = [

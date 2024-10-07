@@ -4,7 +4,7 @@ const SimpleSlide = ({title, description, img }) => {
             <h1>{title}</h1>
             <div className="simple-content">
                 <img src={img} />
-                <ol>
+                <ol className="flex-row">
                     {
                         description.map(el => <li key={crypto.randomUUID()}>{el}</li>)
                     }

@@ -9,8 +9,7 @@ main {
 }
 
 h1 {
-    margin-bottom: 1rem;
-}
+    margin-bottom: ires}
 
 h1.slide-title {
     margin: 1rem 0;
@@ -51,8 +50,8 @@ h1.slide-title {
         width: 100%;
         max-width: 750px;
         height: 100%;
-        border-radius: 10px;
-        object-fit: cover;
+        border-radius: 16px;
+        object-fit: contain;
     }
 }
 

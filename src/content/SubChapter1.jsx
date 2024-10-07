@@ -1,16 +1,19 @@
 import ConceptDef from "../components/ConceptDef";
 import DesicionSlide from "../components/DesicionSlide";
+import { descriptions } from "./Decisions"; 
+
+const hero = localStorage.getItem("heroClass") || "warrior";
+const warriorDesc = descriptions(hero);
 
 const contents = [
     {
-        title: "The Amazon on alert",
-        question: "¿Do yout want to see them1?",
-        description: "Let's start by looking at some important facts about the Amazon.",
-        avatar: "/images/intro/puma.png",
+        title: "The Amazon on Alert",
+        question: "Which trees will you plant?",
+        description: warriorDesc[0], // Same question and structure for all
+        avatar: "/images/intro/CO2.jpg",
         options: [
-            { label: "The Amazon is known as the “Lungs of the planet." },
-            { label: "Tree plantations do not compensate for biodiversity loss." },
-            { label: "Trees act as natural air conditioning." }
+            { label: "Native trees." },
+            { label: "Exotic trees." },
         ]
     },
     {
@@ -38,17 +41,7 @@ const contents = [
         description: [
             "Tropical forests are threatened by many types of agriculture, livestock and human activity. One of the best ways to track those threats is through the Landsat series of satellites, developed by NASA and operated by the United States Geological Survey."
         ],
-        img: "/Guardian.png",
-    }, 
-    {
-        title: "Deforestation",
-        question: "What do you think, should we help him or not?",
-        description: "Oh no, we are at CO₂. It seems he wants your help to plant exotic trees, maybe he wants to contributing to reforestation.",
-        avatar: "/images/intro/CO2.jpg",
-        options: [
-            { label: "Yes, his intention is good" },
-            { label: "No, he could be fooling us" }
-        ]
+        img: "/images/chapter1/landsat.jpeg",
     }
 ]
 
@@ -85,15 +78,7 @@ const slides = [
         title={contents[4].title}
         description={contents[4].description}
         img={contents[4].img}
-    />, 
-    <DesicionSlide  
-        key={crypto.randomUUID()}
-        title={contents[5].title}
-        question={contents[5].question}
-        options={contents[5].options}
-        description={contents[5].description} 
-        img={contents[5].avatar}
-    />
+    />,  
 ];
 
 export { slides };
