@@ -3,6 +3,10 @@
 
 This project is part of the NASA SpaceApps Hackathon, designed to tell a story about climate change through an interactive web experience. The narrative revolves around the character **Guardian of Climate**, focusing on the Amazon rainforest, deforestation, greenhouse gas emissions, and their effects on the environment.
 
+> [!Warning]
+>
+> There are problems when deploying it with the Vercel and github page deployment, we recommend trying the local deployment. See [Installation](#Installation)
+
 ## Features
 - Interactive storytelling with decision-making.
 - Multiple chapters focused on the Amazon and climate change.
